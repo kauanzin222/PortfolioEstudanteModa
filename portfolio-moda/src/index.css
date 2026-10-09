@@ -1,1 +1,59 @@
+@import "@fontsource/goudy-bookletter-1911";
+@import "@fontsource/cinzel/400.css";
+@import "@fontsource/cinzel/600.css";
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Brown Sugar";
+  src: url("/fonts/Brown-Sugar-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@theme {
+  /* Paleta TWØG (confira os hex no book da marca) */
+  --color-ink: #0a0a0a;
+  --color-cocoa: #38251f;
+  --color-wine: #651f28;
+  --color-ash: #777675;
+  --color-camel: #aa8755;
+  --color-nude: #D9D9D9;
+  --color-base: #4a4a4a;
+  --color-gold: #d3af37;
+
+  --font-display: "Brown Sugar", serif;
+  --font-body: "Goudy Bookletter 1911", serif;
+  --font-support: "Cinzel", serif;
+}
+
+.carousel-size {
+  /* o menor entre: 100% da largura, 52rem, ou a largura que cabe na altura da tela */
+  width: min(100%, 100rem, calc((100svh - 8rem) * 16 / 9));
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base text-nude font-body;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    -webkit-text-stroke: 0.02em currentColor;
+  }
+
+  h2 {
+    color: var(--color-gold);
+  }
+}
