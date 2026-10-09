@@ -12,7 +12,7 @@ export default function NavBar() {
                     <li key={id}>
                         <a
                             href={`#${id}`}
-                            className="font-support text-xs uppercase tracking-[0.2em] text-nude/80 transition-colors hover:text-camel md:text-sm"
+                            className="font-support text-xs uppercase tracking-[0.2em] text-nude/80 transition-colors hover:text-gold md:text-sm font-extrabold"
                         >
                             {label}
                         </a>

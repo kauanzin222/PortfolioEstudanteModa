@@ -21,10 +21,10 @@
   --color-cocoa: #38251f;
   --color-wine: #651f28;
   --color-ash: #777675;
-  --color-camel: #aa8755;
+  --color-camel: #95721C;
   --color-nude: #D9D9D9;
   --color-base: #4a4a4a;
-  --color-gold: #d3af37;
+  --color-gold: #CFA730;
 
   --font-display: "Brown Sugar", serif;
   --font-body: "Goudy Bookletter 1911", serif;
@@ -50,7 +50,7 @@
   h3 {
     font-family: var(--font-display);
     font-weight: 400;
-    -webkit-text-stroke: 0.02em currentColor;
+    -webkit-text-stroke: 0.05em currentColor;
   }
 
   h2 {

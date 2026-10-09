@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+
+const arrowBtn =
+    'absolute top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-ink/60 text-nude transition-colors hover:text-gold'
 
 type Props = { slides: string[]; title: string }
 
@@ -35,19 +39,11 @@ export default function ProjectCarousel({ slides, title }: Props) {
                     ))}
                 </div>
 
-                <button
-                    onClick={prev}
-                    aria-label="Slide anterior"
-                    className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-ink/60 px-3 py-1 text-xl text-nude hover:text-camel"
-                >
-                    ‹
+                <button onClick={prev} aria-label="Slide anterior" className={`${arrowBtn} left-3`}>
+                    <FiChevronLeft size={22} />
                 </button>
-                <button
-                    onClick={next}
-                    aria-label="Próximo slide"
-                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-ink/60 px-3 py-1 text-xl text-nude hover:text-camel"
-                >
-                    ›
+                <button onClick={next} aria-label="Próximo slide" className={`${arrowBtn} right-3`}>
+                    <FiChevronRight size={22} />
                 </button>
             </div>
 

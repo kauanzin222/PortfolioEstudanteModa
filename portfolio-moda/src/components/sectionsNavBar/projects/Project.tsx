@@ -15,8 +15,8 @@ export default function Project({ project, index }: Props) {
         <p className="font-support text-xs uppercase tracking-[0.2em] text-nude/70">
           {String(index + 1).padStart(2, '0')} — {year}
         </p>
-        <h3 className="mt-2 font-display text-4xl text-nude">{title}</h3>
-        <p className="mt-4 text-lg text-nude/80">{description}</p>
+        <h3 className="mt-2 font-display text-4xl text-camel">{title}</h3>
+        <p className="mt-4 text-lg text-nude/80 font-medium">{description}</p>
       </header>
 
       <ProjectCarousel slides={slides} title={title} />
