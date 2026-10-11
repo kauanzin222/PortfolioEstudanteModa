@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 
-// const NAVBAR_OFFSET = -80
+
 
 export function useSmoothScroll() {
     useEffect(() => {
