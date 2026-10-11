@@ -13,8 +13,8 @@ export const projects: Project[] = [
     year: '2026',
     description: 'Texto breve de apresentação do projeto (placeholder).',
     slides: [
-        '../../public/projects/twog/1.jpg',
-        '../../public/projects/twog/2.jpg'
+      `${import.meta.env.BASE_URL}projects/twog/1.jpg`,
+      `${import.meta.env.BASE_URL}projects/twog/2.jpg`,
     ], // vazio = mostra o placeholder "Em breve"
   },
   {
